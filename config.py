@@ -5,17 +5,17 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 # Recommended
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
-APP_ID = int(os.environ.get("APP_ID", ""))
-API_HASH = os.environ.get("API_HASH", "")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7740354328:AAHZxss21kBSlDfOsZGFimLV0TvItqbi8RU")
+APP_ID = int(os.environ.get("APP_ID", "26317075"))
+API_HASH = os.environ.get("API_HASH", "9e3569975b5ea5832d9fb6a321c011b3")
 
 # Main
-OWNER_ID = int(os.environ.get("OWNER_ID", "6497757690"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "7523534633"))
 PORT = os.environ.get("PORT", "8022")
 
 # Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb")
-DB_NAME = os.environ.get("DATABASE_NAME", "link")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://FDB:FDB@forwarddb.bx7muof.mongodb.net/?retryWrites=true&w=majority&appName=ForwardDB")
+DB_NAME = os.environ.get("DATABASE_NAME", "ForwardDB")
 
 #Auto approve 
 CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '').split()] # dont change anything 
@@ -53,7 +53,7 @@ USER_REPLY_TEXT = "⚠️ ғᴜᴄᴋ ʏᴏᴜ, ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴍʏ
 
 # Logging
 LOG_FILE_NAME = "links-sharingbot.txt"
-DATABASE_CHANNEL = int(os.environ.get("DATABASE_CHANNEL", "")) # Channel where user links are stored
+DATABASE_CHANNEL = int(os.environ.get("DATABASE_CHANNEL", "-1002789710969")) # Channel where user links are stored
 #--- ---- ---- --- --- --- - -- -  - - - - - - - - - - - --  - -
 
 try:
